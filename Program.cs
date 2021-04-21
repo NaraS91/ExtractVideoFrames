@@ -36,7 +36,7 @@ namespace ExtractVideoFrames
       {
         case "extract":
           //args[1] directory with video file, args[2] file name
-          FFmpegLoader.FFmpegPath = @"C:\Users\mkasz\source\repos\ExtractVideoFrames\bin\ffmpeg\bin";
+          FFmpegLoader.FFmpegPath = @"PATH\TO\FFMPEG\BINARIES";
           var frames = extractFrames(parseMediaFile($@"{args[1]}\{args[2]}").Video);
           saveToFile(frames, framesDirectory + "frame");
           break;
